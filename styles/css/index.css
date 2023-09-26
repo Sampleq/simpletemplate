@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "socialico";
+  src: url(./fonts/Socialico.ttf);
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "arial", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "arial", sans-serif;
+}
+
+button, input, textarea {
+  outline: none;
+  border: none;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,51 @@
+.features {
+    background-color: $grey3;
+    @include section($_pt: 4.2rem, $_pb: 4.5rem);
+
+    &__wrapper {
+        @extend %section-wrapper;
+    }
+
+    &__title {
+        @include h2();
+        margin-bottom: 2.1rem !important;
+    }
+
+    &__cont {
+        display: grid;
+        // grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+
+        @media ($tablet) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            row-gap: 3rem;
+        }
+    }
+
+    // 
+    /* при позиционировании Флексами для плавного изменения ширины элементов - задаём им flex-basis: calc(50% (если надо 2 колонки) - margin элемента (если есть) -  половина ширины отступов между колонками из элементов.
+    Через Grid - код получается проще 
+    */
+    &__wrapper_flex {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        row-gap: 1.5rem;
+
+        @media ($tablet) {
+            column-gap: 2.3rem;
+            row-gap: 3rem;
+        }
+    }
+
+    &__item_flex {
+        flex-basis: 100%;
+
+        @media ($tablet) {
+            flex-basis: calc(50% - 4.1rem - (2.3rem / 2));
+        }
+    }
+
+
+}

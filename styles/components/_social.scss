@@ -1,0 +1,65 @@
+.social {
+    &__icons {
+        display: flex;
+        width: 24rem;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+        font-family: $iconFont;
+        font-size: 6rem;
+        // line-height: 0.4;
+        letter-spacing: 0rem;
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: darken($color: $white, $amount: 20%);
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.7rem;
+        align-items: center;
+
+        @media ($tablet) {
+            align-items: flex-start;
+            
+        }
+
+        margin-bottom: 2.8rem;
+    }
+
+    &__contact {
+        @include p1($white);
+        text-decoration: none;
+        padding-left: 3.2rem;
+
+        position: relative;
+
+        & i {
+         position: absolute;
+         left: 0;  
+         top: -0.15rem;
+         font-size: 1.7em; 
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: darken($white, $amount: 20%);
+        }
+
+
+        &:nth-child(2) {
+            order: 4;
+        }
+        @media ($tablet) {
+            &:nth-child(2) {
+                order: 0;
+            }
+        }
+    }
+}

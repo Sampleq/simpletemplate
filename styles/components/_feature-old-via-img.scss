@@ -1,0 +1,17 @@
+.feature-old-img {
+    padding-left: 4.1rem;
+    width: 100%;
+    position: relative;
+
+    &__text {
+    @include p1();
+    }
+
+    &::before {
+        content: url(../images/icon+.png);
+        position: absolute;
+        top: 0.6rem;
+        left: 0;
+        width: 3.2rem;
+    }
+}
