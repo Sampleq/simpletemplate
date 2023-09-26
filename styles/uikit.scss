@@ -1,0 +1,50 @@
+@import './utils/';
+@import './components/';
+@import './layout/';
+
+.container {
+    max-width: 117rem;
+    margin: 0 auto;
+}
+.ui__title {
+    margin: 1rem;
+    font-size: 2rem;
+}
+.divider {
+    height: 5rem;
+}
+
+.h1 {
+    @include h1();
+}
+
+.h2 {
+    @include h2($_text-align: left);
+}
+
+.h3 {
+    @include h3();
+}
+.lead {
+    @include lead();
+}
+.p1 {
+    @include p1();
+}
+.p2 {
+    @include p2();
+}
+
+.btn {
+@extend %btn;
+}
+
+.input {
+    @extend %input;
+}
+
+.textarea {
+    @extend %textarea;
+}
+
+

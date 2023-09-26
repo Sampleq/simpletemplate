@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Socialico';
+    src:
+    /* add as web font  - so it also works on Safari browsers which do not display user-installed fonts to combat browser fingerprinting */
+        // url('https://github.com/bsiddiqui/bsiddiqui-dot-com/raw/master/fonts/socialico/socialico-webfont.ttf') format('truetype'),
+        url('https://github.com/Sampleq/simpletemplate/raw/main/fonts/Socialico.ttf') format('truetype'),
+
+
+        url(./fonts/Socialico.ttf) format('ttf'),
+        url('./fonts/socialico-webfont.woff2') format('woff2'),
+        url('./fonts/socialico-webfont.woff') format('woff')
+        ;
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Works fine!
+// @font-face {
+//     font-family: "Socialico";
+//     src: url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.eot");
+//     src: 
+//     url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.eot?#iefix")format("embedded-opentype"),
+//     url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.woff2")format("woff2"),
+//     url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.woff")format("woff"),
+//     url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.ttf")format("truetype"),
+//     url("https://db.onlinewebfonts.com/t/4ffae22b400a814a2a85f63b30bf174e.svg#Socialico")format("svg");
+// }
