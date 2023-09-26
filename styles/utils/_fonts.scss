@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'socialico';
-    src: url(./fonts/Socialico.ttf);
+    src:
+        // url(./fonts/Socialico.ttf) format('ttf'),
+        url(./fonts/socialico-webfont.woff2) format('woff2'),
+        url(./fonts/socialico-webfont.woff) format('woff');
     font-weight: normal;
+    font-style: normal;
 }
-
